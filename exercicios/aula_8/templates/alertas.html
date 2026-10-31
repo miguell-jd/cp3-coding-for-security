@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><title>Alertas de segurança</title>
+<h1>Alertas de segurança</h1>
+<form method="post"><label>Descrição <textarea name="descricao" required></textarea></label>
+<button type="submit">Cadastrar alerta</button></form>
+<ul>{% for alerta in alertas %}<li>{{ alerta.descricao }}</li>{% endfor %}</ul>
+</html>
